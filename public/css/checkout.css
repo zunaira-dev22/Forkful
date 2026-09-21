@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(200, 155, 60, 0.15),
+            transparent 28%
+        ),
+        #f7f0e3;
+
+    color: #362523;
+
+    font-family:
+        'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
+}
+
+.checkout-page {
+    min-height: 100vh;
+    padding: 55px 0;
+}
+
+.checkout-header {
+    margin-bottom: 35px;
+}
+
+.back-link {
+    display: inline-block;
+
+    color: #7d2026;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    margin-bottom: 20px;
+}
+
+.checkout-header h1 {
+    font-family: Georgia, serif;
+
+    color: #7d2026;
+
+    font-size: 46px;
+
+    margin-bottom: 10px;
+}
+
+.checkout-header p {
+    color: #7d6963;
+
+    font-size: 17px;
+
+    margin: 0;
+}
+
+
+.checkout-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.15fr 0.85fr;
+
+    gap: 28px;
+
+    align-items: start;
+}
+
+
+.checkout-card,
+.summary-card {
+    background: rgba(255,255,255,0.92);
+
+    border: 1px solid #e6d9c7;
+
+    border-radius: 20px;
+
+    padding: 32px;
+
+    box-shadow:
+        0 18px 45px
+        rgba(72,16,20,0.07);
+}
+
+
+.small-title {
+    color: #c09334;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.checkout-card h2,
+.summary-card h2 {
+    font-family: Georgia, serif;
+
+    color: #7d2026;
+
+    font-size: 29px;
+
+    margin-bottom: 28px;
+}
+
+
+.checkout-field {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+
+.checkout-field label {
+    color: #592128;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+.checkout-field input,
+.checkout-field textarea {
+    border: 1px solid #ddd0be;
+
+    border-radius: 11px;
+
+    background: #fffdf9;
+
+    padding: 14px 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+
+    color: #342422;
+}
+
+
+.checkout-field input {
+    height: 52px;
+}
+
+
+.checkout-field textarea {
+    resize: vertical;
+}
+
+
+.checkout-field input:focus,
+.checkout-field textarea:focus {
+    border-color: #c89b3c;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(200,155,60,0.11);
+}
+
+
+.confirm-order-btn {
+    width: 100%;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7d2026,
+            #5d151b
+        );
+
+    color: white;
+
+    padding: 15px;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    margin-top: 6px;
+
+    transition: 0.2s;
+
+    box-shadow:
+        0 12px 26px
+        rgba(125,32,38,0.18);
+}
+
+
+.confirm-order-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.checkout-items {
+    margin-bottom: 25px;
+}
+
+
+.checkout-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid #eee4d6;
+}
+
+
+.checkout-item strong {
+    color: #5a1b21;
+}
+
+
+.checkout-item span {
+    display: block;
+
+    color: #957f79;
+
+    font-size: 13px;
+
+    margin-top: 4px;
+}
+
+
+.price-line {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 12px 0;
+
+    color: #6f5b56;
+}
+
+
+.final-total {
+    border-top:
+        1px solid #dfd0bd;
+
+    margin-top: 8px;
+
+    padding-top: 20px;
+
+    color: #7d2026;
+
+    font-size: 21px;
+}
+
+
+.secure-note {
+    margin-top: 22px;
+
+    background: #f7f0e3;
+
+    color: #786158;
+
+    padding: 12px;
+
+    border-radius: 9px;
+
+    text-align: center;
+
+    font-size: 13px;
+}
+
+
+@media (max-width: 900px) {
+
+    .checkout-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .checkout-page {
+        padding: 30px 0;
+    }
+
+    .checkout-header h1 {
+        font-size: 36px;
+    }
+
+    .checkout-card,
+    .summary-card {
+        padding: 23px;
+    }
+}
